@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruchita Rathod - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  
+  
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Navigation -->
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0a0a0f]/80 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+     <div class="flex items-center justify-between"><a href="#hero" class="text-xl font-bold tracking-tight"> <span class="text-indigo-400">&lt;</span><span id="nav-name">Ruchita</span><span class="text-cyan-400">/&gt;</span> </a>
+      <div class="hidden md:flex items-center gap-8"><a href="#about" class="nav-link text-sm font-medium text-gray-400 hover:text-white transition-colors py-1">About</a> <a href="#skills" class="nav-link text-sm font-medium text-gray-400 hover:text-white transition-colors py-1">Skills</a> <a href="#projects" class="nav-link text-sm font-medium text-gray-400 hover:text-white transition-colors py-1">Projects</a> <a href="#internship" class="nav-link text-sm font-medium text-gray-400 hover:text-white transition-colors py-1">Experience</a> <a href="#certifications" class="nav-link text-sm font-medium text-gray-400 hover:text-white transition-colors py-1">Certifications</a> <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">Contact</a>
+      </div><button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div><!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+     <div class="flex flex-col gap-3"><a href="#about" class="text-sm font-medium text-gray-400 hover:text-white py-2">About</a> <a href="#skills" class="text-sm font-medium text-gray-400 hover:text-white py-2">Skills</a> <a href="#projects" class="text-sm font-medium text-gray-400 hover:text-white py-2">Projects</a> <a href="#internship" class="text-sm font-medium text-gray-400 hover:text-white py-2">Experience</a> <a href="#certifications" class="text-sm font-medium text-gray-400 hover:text-white py-2">Certifications</a> <a href="#contact" class="text-sm font-medium text-gray-400 hover:text-white py-2">Contact</a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="hero" class="relative min-h-screen hero-gradient grid-pattern flex items-center justify-center px-6 pt-20"><!-- Floating decorative elements -->
+    <div class="absolute top-32 left-10 w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-transparent border border-indigo-500/30 float-animation"></div>
+    <div class="absolute top-48 right-16 w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-transparent border border-cyan-500/30 float-animation-delayed"></div>
+    <div class="absolute bottom-48 right-24 w-24 h-24 rounded-3xl bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 border border-white/10 float-animation-delayed"></div>
+    <div class="text-center max-w-4xl relative z-10"><!-- Status badge -->
+     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> <span class="text-sm font-mono text-gray-400">Available for opportunities</span>
+     </div>
+     <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight whitespace-normal overflow-visible text-center"><span class="block text-gray-400 text-2xl md:text-3xl font-medium mb-4 tracking-wide">Hello, I'm</span> <span id="hero-name" class="inline-block text-center"><span id="hero-name-first" class="glitch-text bg-gradient-to-r from-white via-indigo-200 to-cyan-200 bg-clip-text text-transparent block" data-text="Ruchita">Ruchita</span><span id="hero-name-last" class="glitch-text bg-gradient-to-r from-white via-indigo-200 to-cyan-200 bg-clip-text text-transparent block" data-text="Rathod">Rathod</span></span></h1>
+     <p id="hero-title" class="text-xl md:text-2xl font-mono text-indigo-400 mb-6">Computer Science Student (AI &amp; ML)</p>
+     <p id="hero-tagline" class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">Turning data into insights using Machine Learning and intelligent systems.</p>
+     <div class="flex flex-col sm:flex-row items-center justify-center gap-4"><a href="#projects" class="group px-8 py-4 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 flex items-center gap-2"> View My Work 
+       <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+       </svg></a> <a href="#contact" class="px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/5 transition-all duration-300"> Get in Touch </a>
+     </div><!-- Scroll indicator -->
+     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"><span class="text-xs font-mono">scroll down</span>
+      <div class="w-6 h-10 rounded-full border-2 border-gray-600 flex items-start justify-center p-2">
+       <div class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce"></div>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="py-24 px-6 relative">
+    <div class="max-w-6xl mx-auto">
+     <div class="reveal-section grid lg:grid-cols-2 gap-16 items-center"><!-- Visual element -->
+      <div class="relative">
+       <div class="aspect-square max-w-md mx-auto relative"><!-- Code block decoration -->
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#12121a] to-[#0a0a0f] border border-white/10 overflow-hidden">
+         <div class="p-6 font-mono text-sm">
+          <div class="flex gap-2 mb-4"><span class="w-3 h-3 rounded-full bg-red-500/80"></span> <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span> <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+          </div>
+          <pre class="text-gray-400 text-xs leading-relaxed"><span class="text-purple-400">class</span> <span class="text-cyan-400">Developer</span>:
+    <span class="text-purple-400">def</span> <span class="text-yellow-400">__init__</span>(<span class="text-orange-400">self</span>):
+        <span class="text-orange-400">self</span>.name = <span class="text-emerald-400">"Ruchita Rathod"</span>
+        <span class="text-orange-400">self</span>.role = <span class="text-emerald-400">"Computer Science Student (AI & ML)"</span>
+        <span class="text-orange-400">self</span>.passion = [
+            <span class="text-emerald-400">"Machine Learning"</span>,
+            <span class="text-emerald-400">"Data Science"</span>,
+            <span class="text-emerald-400">"AI & ML"</span>
+        ]
+    
+    <span class="text-purple-400">def</span> <span class="text-yellow-400">create_impact</span>(<span class="text-orange-400">self</span>):
+        <span class="text-purple-400">return</span> <span class="text-emerald-400">"Building AI for good"</span></pre>
+         </div>
+        </div><!-- Floating accent -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-cyan-500 opacity-20 blur-xl"></div>
+        <div class="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 opacity-15 blur-xl"></div>
+       </div>
+      </div><!-- Content -->
+      <div><span class="text-indigo-400 font-mono text-sm mb-4 block">// About Me</span>
+       <h2 class="text-4xl md:text-5xl font-bold mb-6">Passionate about <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Intelligent Systems</span></h2>
+       <p id="about-text" class="text-gray-400 text-lg leading-relaxed mb-6">I am a Computer Science Engineering (AI &amp; ML) student at Adani University currently in my third year. I have a strong interest in Machine Learning and Data Science and enjoy working with data to uncover insights and build predictive models. Through academic projects and practical implementations, I have developed experience in data analysis, machine learning models, and building intelligent systems that solve real-world problems. I am particularly interested in applying AI and data-driven solutions to improve decision making and automation.</p>
+       <div class="grid grid-cols-2 gap-6 mb-8">
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="text-3xl font-bold text-indigo-400">3+</span>
+         <p class="text-gray-400 text-sm mt-1">Projects Completed</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="text-3xl font-bold text-cyan-400">Adani University</span>
+         <p class="text-gray-400 text-sm mt-1">University • AI &amp; Machine Learning</p>
+        </div>
+       </div><a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 font-semibold hover:text-indigo-300 transition-colors"> Let's connect 
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg></a>
+      </div>
+     </div>
+    </div>
+   </section><!-- Skills Section -->
+   <section id="skills" class="py-24 px-6 bg-[#0d0d14]">
+    <div class="max-w-6xl mx-auto">
+     <div class="reveal-section text-center mb-16"><span class="text-indigo-400 font-mono text-sm mb-4 block">// My Skills</span>
+      <h2 class="text-4xl md:text-5xl font-bold">Technical Arsenal</h2>
+     </div>
+     <div class="reveal-section grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- AI/ML -->
+      <div class="glow-border rounded-2xl p-6">
+       <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold mb-4">AI &amp; Machine Learning</h3>
+       <div class="space-y-3">
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Machine Learning</span> <span class="text-indigo-400">82%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 82%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Data Analysis</span> <span class="text-indigo-400">78%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 78%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Pandas / NumPy</span> <span class="text-indigo-400">74%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 74%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Feature Engineering / Data Visualization</span> <span class="text-indigo-400">75%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 75%"></div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Programming -->
+      <div class="glow-border rounded-2xl p-6">
+       <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold mb-4">Programming Languages</h3>
+       <div class="space-y-3">
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Python</span> <span class="text-cyan-400">85%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 85%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Java</span> <span class="text-cyan-400">75%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 75%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">C++</span> <span class="text-cyan-400">72%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 72%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">JavaScript / HTML / CSS</span> <span class="text-cyan-400">70%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 70%"></div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Tools & Frameworks -->
+      <div class="glow-border rounded-2xl p-6">
+       <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold mb-4">Tools &amp; Frameworks</h3>
+       <div class="space-y-3">
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Power BI</span> <span class="text-purple-400">70%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 70%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Git &amp; GitHub</span> <span class="text-purple-400">80%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 80%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">VS Code</span> <span class="text-purple-400">85%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 85%"></div>
+         </div>
+        </div>
+        <div>
+         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Jupyter Notebook / FastAPI</span> <span class="text-purple-400">78%</span>
+         </div>
+         <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+          <div class="skill-bar h-full rounded-full" style="width: 78%"></div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!-- Tech tags -->
+     <div class="reveal-section mt-12 flex flex-wrap justify-center gap-3"><span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Scikit-learn</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Matplotlib</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Seaborn</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">React (basic)</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Pandas</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">NumPy</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Data Visualization</span> <span class="tech-tag px-4 py-2 rounded-full text-sm font-mono">Feature Engineering</span>
+     </div>
+    </div>
+   </section><!-- Projects Section -->
+   <section id="projects" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+     <div class="reveal-section text-center mb-16"><span class="text-indigo-400 font-mono text-sm mb-4 block">// Featured Work</span>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">A selection of academic and personal projects in AI, ML, and data science</p>
+     </div>
+     <div class="reveal-section grid gap-8"><!-- Project 1 - Featured -->
+      <div class="project-card glow-border rounded-3xl overflow-hidden">
+       <div class="grid lg:grid-cols-2">
+        <div class="p-8 lg:p-10 flex flex-col justify-center">
+         <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-400 text-xs font-mono">Featured</span> <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono">ML</span>
+         </div>
+         <h3 class="text-2xl lg:text-3xl font-bold mb-4">Ticket Forecasting using Machine Learning</h3>
+         <p class="text-gray-400 mb-6 leading-relaxed">Developed a machine learning model to predict ticket demand using historical booking data. Implemented data preprocessing, feature engineering, and forecasting models to analyze patterns and improve prediction accuracy.</p>
+         <div class="flex flex-wrap gap-2 mb-6"><span class="px-3 py-1 rounded-full bg-white/5 text-gray-400 text-xs font-mono">Python</span> <span class="px-3 py-1 rounded-full bg-white/5 text-gray-400 text-xs font-mono">Pandas</span> <span class="px-3 py-1 rounded-full bg-white/5 text-gray-400 text-xs font-mono">Scikit-learn</span> <span class="px-3 py-1 rounded-full bg-white/5 text-gray-400 text-xs font-mono">Forecasting</span>
+         </div>
+         <div class="flex items-center gap-4"><a href="https://github.com/ruchita-16/FUTURE_ML_02" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity" target="_blank" rel="noopener noreferrer">
+           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+           </svg> GitHub </a>
+         </div>
+        </div>
+        <div class="relative h-64 lg:h-auto bg-gradient-to-br from-indigo-500/10 to-purple-500/10 flex items-center justify-center">
+         <div class="absolute inset-0 grid-pattern opacity-50"></div>
+         <svg class="w-32 h-32 text-indigo-400/50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+         </svg>
+        </div>
+       </div>
+      </div><!-- Project Grid -->
+        <div class="grid md:grid-cols-2 gap-6"><!-- Project 2 -->
+         <div class="project-card glow-border rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-xs font-mono">NLP</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Resume Screening System using Machine Learning</h3>
+          <p class="text-gray-400 text-sm mb-4 leading-relaxed">Built an intelligent resume screening system that automatically classifies resumes using Natural Language Processing techniques. The system extracts relevant features from resumes and predicts the most suitable job category.</p>
+          <div class="flex flex-wrap gap-2 mb-5"><span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Python</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">NLP / Scikit-learn</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Pandas</span>
+          </div>
+          <div class="flex items-center gap-3"><a href="https://github.com/ruchita-16/FUTURE_ML_03" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg> GitHub </a>
+          </div>
+         </div><!-- Project 3 -->
+         <div class="project-card glow-border rounded-2xl p-6">
+         <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono">ML</span>
+         </div>
+         <h3 class="text-xl font-bold mb-3">Sales Forecasting using Machine Learning</h3>
+         <p class="text-gray-400 text-sm mb-4 leading-relaxed">Implemented a machine learning model to forecast future sales based on historical data. Performed data cleaning, feature engineering, and regression modeling to identify trends and predict future performance.</p>
+         <div class="flex flex-wrap gap-2 mb-5"><span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Python</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Pandas / Scikit-learn</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Plotly</span>
+         </div>
+         <div class="flex items-center gap-3"><a href="https://github.com/ruchita-16/FUTURE_ML_01" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg> GitHub </a>
+          </div>
+         </div><!-- Project 4 -->
+         <div class="project-card glow-border rounded-2xl p-6">
+         <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-mono">Web</span>
+         </div>
+         <h3 class="text-xl font-bold mb-3">Event Management System (Web Design Project)</h3>
+         <p class="text-gray-400 text-sm mb-4 leading-relaxed">Designed and developed a responsive web interface for an event management system that allows users to browse events, view details, and manage registrations.</p>
+         <div class="flex flex-wrap gap-2 mb-5"><span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">HTML</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">CSS</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">JavaScript</span>
+         </div>
+         <div class="flex items-center gap-3"><a href="https://github.com/ruchita-16/Fork-D" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg> GitHub </a>
+          </div>
+         </div>
+        </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Internship Section -->
+   <section id="internship" class="py-24 px-6 bg-[#0d0d14]">
+    <div class="max-w-6xl mx-auto">
+     <div class="reveal-section text-center mb-16"><span class="text-indigo-400 font-mono text-sm mb-4 block">// Experience</span>
+      <h2 class="text-4xl md:text-5xl font-bold">Internship</h2>
+     </div>
+     <div class="reveal-section max-w-4xl mx-auto"><!-- Timeline -->
+      <div class="relative"><!-- Timeline line -->
+       <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-cyan-500 to-purple-500 transform md:-translate-x-1/2"></div><!-- Experience 1 -->
+       <div class="relative flex flex-col md:flex-row gap-8 mb-12 pl-8 md:pl-0">
+        <div class="md:w-1/2 md:pr-12 md:text-right">
+         <div class="glow-border rounded-2xl p-6"><span class="text-cyan-400 font-mono text-sm">Present</span>
+          <h3 class="text-xl font-bold mt-2 mb-1">Machine Learning Engineer Intern</h3>
+          <p class="text-indigo-400 font-semibold mb-3">Future Interns</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Worked on machine learning projects involving data preprocessing, feature engineering, and predictive modeling. Gained hands-on experience working with real datasets and building machine learning solutions. Currently seeking additional internship opportunities in Machine Learning and Data Science.</p>
+          <div class="flex flex-wrap gap-2 mt-4 md:justify-end"><span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Python</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Pandas</span> <span class="px-2 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono">Scikit-learn</span>
+          </div>
+         </div>
+        </div><!-- Dot -->
+        <div class="absolute left-0 md:left-1/2 top-6 w-4 h-4 rounded-full bg-cyan-400 transform -translate-x-1/2 shadow-lg shadow-cyan-400/50"></div>
+        <div class="md:w-1/2"></div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Certifications Section -->
+   <section id="certifications" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+     <div class="reveal-section text-center mb-16"><span class="text-indigo-400 font-mono text-sm mb-4 block">// Credentials</span>
+      <h2 class="text-4xl md:text-5xl font-bold">Certifications</h2>
+     </div>
+     <div class="reveal-section grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Cert 1 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">Jira Fundamentals Certification</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div><!-- Cert 2 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500/20 to-orange-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">AWS Cloud Fundamentals</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div><!-- Cert 3 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">Machine Learning Certification</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div><!-- Cert 4 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">Artificial Intelligence Fundamentals</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div><!-- Cert 5 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">Prompt Engineering Certification</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div><!-- Cert 6 -->
+      <div class="glow-border rounded-2xl p-6 group">
+       <div class="flex items-start justify-between mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500/20 to-red-500/5 flex items-center justify-center">
+         <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+         </svg>
+        </div><span class="text-xs font-mono text-gray-500">Current</span>
+       </div>
+       <h3 class="text-lg font-bold mb-2">Machine Learning Certification</h3>
+       <p class="text-gray-400 text-sm mb-4">Issuer (add later)</p><a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100" target="_blank" rel="noopener noreferrer"> View Credential 
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg></a>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-24 px-6 bg-[#0d0d14] relative overflow-hidden"><!-- Background decoration -->
+    <div class="absolute inset-0 hero-gradient opacity-50"></div>
+    <div class="max-w-4xl mx-auto relative z-10">
+     <div class="reveal-section text-center mb-16"><span class="text-indigo-400 font-mono text-sm mb-4 block">// Let's Connect</span>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Interested in collaborating or have an opportunity? I'd love to hear from you!</p>
+     </div>
+     <div class="reveal-section grid md:grid-cols-2 gap-8"><!-- Contact Info -->
+      <div class="space-y-6">
+       <div class="glow-border rounded-2xl p-6">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 flex items-center justify-center">
+          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-400">Email</p>
+         <a id="contact-email" class="font-semibold" href="mailto:ruchirathod2747@gmail.com">ruchirathod2747@gmail.com</a>
+         </div>
+        </div>
+       </div>
+       <div class="glow-border rounded-2xl p-6">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 flex items-center justify-center">
+          <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-400">Location</p>
+         <p class="font-semibold">Ahmedabad, India</p>
+         </div>
+        </div>
+       </div><!-- Social Links -->
+       <div class="flex gap-4"><a href="https://github.com/ruchita-16" class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-indigo-500/20 hover:border-indigo-500/50 transition-all duration-300" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+         <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg></a> <a href="https://www.linkedin.com/in/ruchita-rathod-16apr2006" class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500/20 hover:border-blue-500/50 transition-all duration-300" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+         <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg></a>
+       </div>
+      </div><!-- Contact Form -->
+      <form id="contact-form" class="glow-border rounded-2xl p-6 space-y-4">
+       <div><label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all text-white placeholder-gray-500" placeholder="Your name">
+       </div>
+       <div><label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all text-white placeholder-gray-500" placeholder="your@email.com">
+       </div>
+       <div><label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label> <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all text-white placeholder-gray-500 resize-none" placeholder="Your message..."></textarea>
+       </div><button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-xl font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"> Send Message 
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+        </svg></button>
+       <p id="form-status" class="text-center text-sm hidden"></p>
+      </form>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-8 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+     <p class="text-gray-500 text-sm">© 2024 Ruchita Rathod. Crafted with <span class="text-red-400">♥</span> and lots of ☕</p>
+     <p class="text-gray-500 text-sm font-mono">Built with pure HTML, CSS &amp; JS • <a href="https://github.com/ruchita-16" class="text-gray-500 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/ruchita-rathod-16apr2006" class="text-gray-500 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+   </footer>
+  </div>
+  
+   <script src="script.js"></script>
+ </body>
+</html>
